@@ -1,0 +1,106 @@
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+main {
+  min-height: 80vh;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// ratings
+.rating {
+  span {
+    margin: 0.1rem;
+  }
+}
+
+/* carousel */
+
+.carousel {
+  padding-bottom: 2.4rem;
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+  }
+  .carousel-item {
+    padding: 1rem;
+    & > a {
+      width: 100%;
+      text-align: center;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      color: #fff;
+    }
+
+    .img-wrap {
+      width: 17rem;
+      height: 17rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    img {
+      width: 80%;
+      max-height: 15rem;
+      max-width: 11rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+.card {
+  img {
+    transition: transform 0.2s ease-in-out;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.nav-link {
+  .svg {
+    width: 0.85rem;
+    vertical-align: text-top;
+    margin-right: 0.2rem;
+  }
+
+  &.active,
+  &:hover {
+    .svg {
+      fill: rgba(255, 255, 255, 0.856);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-control {
+    padding: 0.75rem 1rem;
+  }
+}
